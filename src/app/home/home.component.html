@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="row">
+
+        <!--About Me-->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2><b>About Me</b></h2>
+                <p>
+                    &nbsp;
+                </p>
+                <!--SCHOOL LOGOS-->
+                <div> 
+                    <a href="https://bpi.edu" target="_blank">
+                        <img src="../../assets/poly.png" alt="profile picture" width="256" height="256" class="rounded-circle">
+                    </a>
+                </div>
+                &nbsp;
+
+                <div> 
+                    <a href="https://www.morgan.edu" target="_blank"> 
+                        <img src="../../assets/morgan.jpeg" alt="profile picture" width="256" height="256" class="rounded-circle">
+                    </a>
+                </div>
+                &nbsp;
+
+                <div> 
+                    <a href="https://www.youtube.com/watch?v=qBqy_LV3vcQ" target="_blank"> 
+                        <img src="../../assets/umgc.png" alt="profile picture" width="256" height="256" class="rounded-circle">
+                    </a>
+                </div>
+                &nbsp;
+
+
+                <!--QUICK FACTS-->
+                <h6 class="text-left"><b>Quick Facts:</b></h6>
+                <p>Specializing in Software Development, RPA Development, and Security. </p>
+
+                <p>B.S. Degree in Software Development & Security (3.7 GPA)  </p>
+                <p> B.S. Degree in Marketing</p>
+                    
+                <p>I am constantly learning and evolving.</p>
+
+                <p>
+                    &nbsp;
+                </p>
+                <!--Technologies-->
+                <h6 class="text-left"><b>Technologies: </b></h6>
+                    
+                <p><b>Frontend: </b>Angular, HTML/CSS, Flask, Figma, Springboot</p> 
+                    
+                <p> <b>Backend: </b>Javascript/Typescript, UiPath, Rest API, NodeJs, ExpressJs, Java, Python, Linux, Bash, Command Lines</p> 
+                    
+                <p> <b>Database:  </b>SQL, Mongo DB, Postgres SQL, RDMS, MySQL, Oracle, Microsoft SQL Server</p> 
+                    
+                <p> <b>Cloud Computing, Source Control, Version Control, Scrum, and Agile: </b>Microsoft Azure, Azure Devops, Amazon Web Services AWS, Git, Github</p> 
+                    
+                <p> <b>Security Experience: </b>Black Box White Box Testing, Junit Testing, Penetration Testing, Risk Detection, Vulnerability Mitigation </p> 
+                    
+                <p> <b>Additional areas of expertise:  </b>Single Page Application SPA Development, Server Side Development, Web Development </p> 
+                
+                <p>
+                    &nbsp;
+                </p>
+
+                <!--Interests
+                <h6 class="text-left"><b>Interests: </b></h6>    
+                <p> My hobbies center around Star Wars, Marvel, NBA, NFL, and many many genres of popular and unpopular music. </p>
+                -->
+            </div>
+        </div>
+        <!--Featured Project-->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2><b>Featured Project </b></h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src= '../../assets/Cowan Wireframe 2.jpg' alt="slide" style="display: block; width: 100%;"></slide>  <!--place project screenshot pictures here-->
+                </div>
+            </carousel>
+
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit the portfolio section to learn more!</p>
+        </div>
+
+    </div>
+</div>
