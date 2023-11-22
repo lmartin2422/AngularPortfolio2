@@ -1,0 +1,17 @@
+<!--PROJECT 1-->
+<div class="card shadow text-center" style="max-width: 350px; min-width: 350px;"> <!--card is a class in bootstrap-->
+    <div class="card-body">
+        <h5 class="card-title">{{project.name}}</h5>
+        <p class="card-text">{{project.summary}}</p> <!--description-->
+        <button class="btn btn-primary" (click)="OpenProjectModal()">View More</button>
+    </div>
+
+    <div class="card-footer">
+        <div class="d-flex flex-wrap justify-content-center">
+            <div *ngFor="let tag of project.tags">  <!--ngFor allows us to iterate through an array-->
+                <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag}}</div> <!--will display data that comes from project input-->
+                <!--line above is an example of data binding-->
+            </div>
+        </div>
+    </div>
+</div> 
